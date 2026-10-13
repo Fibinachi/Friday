@@ -1,5 +1,7 @@
 # Friday
 
+### because fuck Monday.
+
 > Have your agent reach out to mine.
 
 Friday is my AI assistant: deliberately augmented, deeply integrated, and opinionated about evidence. This repo documents the augmentation, the stack built around a general-purpose assistant to turn it into something closer to a chief of staff with a lab.
