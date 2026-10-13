@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "friday-front-desk",
+  "main": "./src/index.ts",
+  "compatibility_date": "2026-10-13",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  // All configuration is via vars below. No secrets live in this file.
+  // Webhook URLs are PLACEHOLDER / empty until Charles configures them.
+  "vars": {
+    "MCP_OWNER_NAME": "Charles Prescott",
+    "MCP_AGENT_NAME": "Friday",
+    // Public URL of this endpoint once deployed + custom domain attached.
+    // The /.well-known/agent-mcp route falls back to the request origin + /mcp when empty.
+    "MCP_ENDPOINT_URL": "https://friday.14qbd273.com/mcp",
+    // The owner's agent answers ask_repo questions here.
+    // POST {question, repo, path, fetched_content, files_consulted} as JSON;
+    // expected reply: {answer: string}. Empty = queue-for-owner static reply path.
+    "OWNER_AGENT_CALLBACK_URL": "",
+    // HTTPS webhook the IRC notification relay bot exposes (on the tailnet).
+    // Expected receiver: a small outbound-only IRC bot that posts
+    // {type, summary, detail, at} as a message to Charles's private channel.
+    // Empty = notifications queue in the Worker log (QUEUED) until the bot exists.
+    "NOTIFY_WEBHOOK_URL": ""
+  }
+}

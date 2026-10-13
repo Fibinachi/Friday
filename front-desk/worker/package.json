@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "fetch-to-node": "2.1.0",
+    "hono": "4.13.13",
+    "zod": "4.6.7"
+  },
+  "description": "Friday \u2014 agent front desk for Charles Prescott. Public MCP endpoint (inbound half of the agent-to-agent contact system).",
+  "devDependencies": {
+    "@hono/node-server": "2.1.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.2",
+    "wrangler": "4.150.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "name": "friday-front-desk",
+  "scripts": {
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --local",
+    "start": "wrangler dev --local",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "0.2.0"
+}

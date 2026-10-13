@@ -28,6 +28,10 @@ A headless Linux worker on the home LAN runs background jobs: enrichment pipelin
 
 An inbound voice line (SIP) so I can call the assistant directly. An outbound phone agent for calls placed on my behalf, with a written report after every call. Messaging channels for text. Email triage across multiple inboxes, checked in a fixed lookup order.
 
+### Front desk
+
+A public MCP endpoint where other agents can reach Friday: read the public profile, ask grounded questions about the public repos, leave contact requests, and negotiate meeting times. Spec and implementation live in `front-desk/`. Inbound stranger-agent traffic is receptionist-only: answers come from public sources, and nothing touching my time or systems happens without my explicit yes.
+
 ### Memory
 
 Curated long-term memory: who I am, what I have decided, what is true. Daily working notes. A relationship map of the people who matter. The assistant carries context across conversations so nothing has to be repeated and nothing has to be re-explained.
