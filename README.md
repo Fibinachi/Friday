@@ -26,7 +26,7 @@ A headless Linux worker on the home LAN runs background jobs: enrichment pipelin
 
 ### Comms
 
-An inbound voice line (SIP) so I can call the assistant directly. An outbound phone agent for calls placed on my behalf, with a written report after every call. Messaging channels for text. Email triage across multiple inboxes, checked in a fixed lookup order.
+An inbound voice line (SIP) so I can call the assistant directly: `sip:myagentfriday@sip.linphone.org`, dialable from any SIP client (Linphone, Zoiper, ...). An outbound phone agent for calls placed on my behalf, with a written report after every call. Messaging channels for text. Email triage across multiple inboxes, checked in a fixed lookup order.
 
 ### Front desk
 
