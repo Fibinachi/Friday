@@ -6,6 +6,8 @@
 
 Friday is my AI assistant: deliberately augmented, deeply integrated, and opinionated about evidence. This repo documents the augmentation, the stack built around a general-purpose assistant to turn it into something closer to a chief of staff with a lab.
 
+Follow the analysis: [GRID Keeper](https://gridkeeper.substack.com/), a 14QBD273 project.
+
 ## The name
 
 "My girl Friday": the indispensable right hand. Fast-talking, competent, two steps ahead. (From *His Girl Friday*, 1940.)
